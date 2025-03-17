@@ -1,0 +1,14 @@
+<div class="message-input-container">
+  <input
+    type="text"
+    placeholder="Type a message..."
+    [(ngModel)]="message"
+    (keydown.enter)="sendMessage()"
+    class="message-input-field"
+  />
+  <tui-icon
+    icon="send"
+    (click)="sendMessage()"
+    class="send-button">
+  </tui-icon>
+</div>

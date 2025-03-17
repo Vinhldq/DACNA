@@ -1,0 +1,9 @@
+<div #scrollMe class="chat-window" >
+  <div class="messages">
+    <div *ngFor="let message of messages" [ngClass]="{'self': message.sender === 'You', 'other': message.sender !== 'You'}" class="message">
+      <strong>{{ message.sender }}</strong>
+      <div class="text">{{ message.text }}</div>
+      <div class="timestamp">{{ message.timestamp | date:'shortTime' }}</div>
+    </div>
+  </div>
+</div>

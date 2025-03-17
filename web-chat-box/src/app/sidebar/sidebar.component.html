@@ -1,0 +1,26 @@
+<div class="sidebar">
+  <div class="app-name">
+    <h2>Messenger</h2>
+  </div>
+
+  <div class="search-bar">
+    <input type="text" placeholder="Tìm kiếm..." [(ngModel)]="searchText"/>
+    <tui-icon icon="@tui.search"/>
+  </div>
+
+  <div class="user-list">
+    <div
+      class="user"
+      *ngFor="let user of users "
+      (click)="onSelectUser(user)"
+    >
+      <div class="avatar">
+        <img [src]="user.avatar" alt="{{ user.name }}"/>
+      </div>
+      <div class="user-info">
+        <span class="name">{{ user.name }}</span>
+        <span class="status">{{ user.status }}</span>
+      </div>
+    </div>
+  </div>
+</div>

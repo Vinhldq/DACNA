@@ -1,6 +1,6 @@
 import {AfterViewChecked, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {DatePipe, NgClass, NgForOf} from '@angular/common';
-import {ChatService, Message} from '../service/chat.service';
+import {ChatService, Message} from '../../service/chat/chat.service';
 
 @Component({
   selector: 'app-chat-window',

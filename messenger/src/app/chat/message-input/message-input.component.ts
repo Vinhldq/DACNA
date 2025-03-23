@@ -1,6 +1,6 @@
 import {Component, Input} from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {ChatService} from '../service/chat.service';
+import {ChatService} from '../../service/chat/chat.service';
 import {TuiIcon} from '@taiga-ui/core';
 
 @Component({
